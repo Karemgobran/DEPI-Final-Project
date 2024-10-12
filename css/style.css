@@ -1,0 +1,232 @@
+:root {
+    --main-color: #322A7D;
+    --body-color: #F7F8FA;
+    --black-color: #11141A;
+}
+
+body {
+    font-family: 'Roboto', "sans-serif";
+    height: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start Navbar */
+.navbar {
+    background-color: #FFFFFF;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.navbar .navbar-brand svg {
+    width: 30px;
+    height: 39px;
+    position: relative;
+    color: var(--main-color);
+}
+
+.navbar .navbar-brand::before,
+.navbar .navbar-brand::after {
+    background-color: #FFA101;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    width: 10.91px;
+    height: 10.91px;
+}
+
+.navbar .navbar-brand::before {
+    content: "";
+    top: 38.42px;
+    left: -11px;
+
+}
+
+.navbar .navbar-brand::after {
+    content: " ";
+    top: -16.58px;
+    left: 28px;
+}
+
+.navbar input[type="search"] {
+
+    height: 44px;
+    border-radius: 15px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    outline: none;
+    border: none;
+    background-color: #F7F8FA;
+    transition: 0.5s ease;
+}
+
+.navbar input[type="search"]:focus {
+    outline: none;
+    box-shadow: none;
+    width: 300px;
+}
+
+.navbar form svg {
+    color: #BBC5D5;
+    width: 18.02px;
+    height: 18.02px;
+    top: 50%;
+    left: 15px;
+    transform: translatey(-50%);
+}
+
+.navbar .bangalore a {
+    text-decoration: none;
+    color: black;
+    height: 15px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #11141A;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* End Navbar */
+/* strat landing */
+.landing {
+    background-color: var(--body-color);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "•";
+    color: #6c757d;
+    padding: 0 5px;
+}
+
+.breadcrumb a {
+    color: #6c757d;
+}
+
+.breadcrumb-item.active {
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.btn-custom {
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #000;
+}
+
+.landing .image-boxes .full-height {
+    height: 100%;
+}
+
+.landing .image-boxes .row>div svg {
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.landing .image-boxes img {
+    border-radius: 12px;
+}
+
+.landing .image-boxes .row .vurve::before {
+    content: attr(data-work);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--body-color);
+    font-size: 22px;
+    transform: translate(-50%, -50%);
+    letter-spacing: 15.5px;
+    font-weight: bold;
+}
+
+.btn-see-all {
+    bottom: 15px;
+    right: 15px;
+    color: var(--black-color);
+    background-color: var(--body-color);
+    border-radius: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-see-all:hover {
+    color: var(--body-color);
+    background-color: var(--black-color);
+}
+
+.business-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.business-status {
+    color: orange;
+    font-weight: bold;
+}
+
+.business-info i {
+    margin-right: 5px;
+}
+
+.btn-enquire {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border: none;
+}
+
+.btn-book-now {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.btn-book-now:hover {
+    color: #ffc107;
+}
+
+.btn-book-now:hover {
+    background-color: var(--main-color);
+}
+
+.business-rating svg {
+    color: #ffc107;
+
+}
+
+@media (max-width:767px) {
+    .business-card .info-shop {
+        flex-direction: column;
+
+    }
+}
+
+/* .business-card .info .dote::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #ffc107;
+} */
+
+/* end landing */
